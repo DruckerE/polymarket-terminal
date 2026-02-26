@@ -94,9 +94,6 @@ class MainScreen(Container):
         if state.candles:
             self._chart.update_candles(state.candles)
 
-        if state.composite_score:
-            self._signals.update_score(state.composite_score)
-
         self._watchlist.update_watchlist()
         self._pnl.update_pnl(self._cache.pnl_history)
         self._positions.update_positions(self._cache.positions)
