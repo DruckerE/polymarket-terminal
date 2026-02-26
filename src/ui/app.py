@@ -141,6 +141,8 @@ class PolymarketTerminal(App):
         logger.info("Scanner found market: %s (%s)", result.slug, result.status)
         self.cache.set_market(market)
         self.cache.active_market_id = market.condition_id
+        self._on_market_chosen(market)
+        self._tape_msg(f"New market: {result.slug}")
 
     def _on_scanner_expired(self, result: ScanResult) -> None:
         """Scanner: market expired — force exit, log window summary."""
