@@ -1,0 +1,76 @@
+/* Bloomberg Terminal Dark Theme */
+
+Screen {
+    background: #000000;
+    color: #E0E0E0;
+}
+
+/* ── Layout rows ─────────────────────────────────────────────────────── */
+
+#top-row {
+    height: 2fr;
+}
+
+#mid-row {
+    height: 1fr;
+    min-height: 8;
+}
+
+#bot-row {
+    height: 1fr;
+    min-height: 8;
+}
+
+/* ── DataTable styling ───────────────────────────────────────────────── */
+
+DataTable {
+    background: #000000;
+    color: #E0E0E0;
+}
+
+DataTable > .datatable--header {
+    background: #1A1A2E;
+    color: #FFB000;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #FFB00033;
+    color: #FFFFFF;
+}
+
+/* ── RichLog styling ─────────────────────────────────────────────────── */
+
+RichLog {
+    background: #000000;
+    color: #E0E0E0;
+    scrollbar-color: #333333;
+    scrollbar-color-hover: #555555;
+}
+
+/* ── Input styling ───────────────────────────────────────────────────── */
+
+Input {
+    background: #111111;
+    color: #E0E0E0;
+    border: solid #333333;
+}
+
+Input:focus {
+    border: solid #FFB000;
+}
+
+Button {
+    background: #1A1A2E;
+    color: #FFB000;
+    border: solid #333333;
+}
+
+Button:hover {
+    background: #333333;
+}
+
+Footer {
+    background: #1A1A2E;
+    color: #FFB000;
+}
