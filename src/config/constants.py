@@ -53,9 +53,9 @@ SCALP_MAX_HOLD_SECONDS = 60      # Force exit after 60s
 SCALP_COOLDOWN_SECONDS = 15      # Wait between trades
 SCALP_MAX_TRADES_PER_WINDOW = 5  # Don't overtrade
 SCALP_EXIT_BEFORE_END = 30       # Exit 30s before window closes
-SCALP_OBI_THRESHOLD = 0.3        # OBI spike entry trigger
-SCALP_MOMENTUM_THRESHOLD = 0.02  # Price momentum entry trigger ($0.02)
-SCALP_VOLUME_SPIKE_MULT = 2.0    # Trade size must be 2x recent avg
+SCALP_OBI_THRESHOLD = 0.10       # OBI spike entry trigger (lowered from 0.3)
+SCALP_MOMENTUM_THRESHOLD = 0.005 # Price momentum entry trigger (lowered from $0.02)
+SCALP_VOLUME_SPIKE_MULT = 1.3    # Trade size must be 1.3x recent avg (lowered from 2.0)
 SCALP_BET_SIZE = 10.0            # $10 per trade
 SCALP_PRICE_HISTORY_LEN = 10     # Track last N prices per token
 
